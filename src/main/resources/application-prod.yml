@@ -1,0 +1,15 @@
+server:
+  prot: 8090
+  context-path: /app
+
+datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://www.oxsource.net:3306/app_store?useUnicode=true&amp;characterEncoding=utf-8
+    username: oxsource
+    password: 52fp1992.
+    sql-script-encoding: utf-8
+
+jpa:
+  hibernate:
+    ddl-auto: none
+  show-sql: true
