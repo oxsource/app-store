@@ -1,6 +1,7 @@
 package net.oxsource.spring.database.model.user;
 
 import lombok.Data;
+import net.oxsource.spring.database.model.base.BaseModel;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -11,10 +12,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "user_admin")
-public class UserAdmin {
-    public static final int STATUS_DISABLE = 0;
-    public static final int STATUS_ENABLE = 1;
-
+public class UserAdmin extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", unique = true)

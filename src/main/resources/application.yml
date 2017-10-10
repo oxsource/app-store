@@ -1,12 +1,11 @@
 spring:
   profiles:
     active: dev
-  datasource:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/app_store?useUnicode=true&amp;characterEncoding=utf-8
-      username: develop
-      password: develop123.
-      sql-script-encoding: utf-8
+
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
 
   jpa:
     hibernate:

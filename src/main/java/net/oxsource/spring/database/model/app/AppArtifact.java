@@ -2,6 +2,7 @@ package net.oxsource.spring.database.model.app;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.oxsource.spring.database.model.base.BaseModel;
 
 import javax.persistence.*;
 import java.util.Date;

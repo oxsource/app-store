@@ -6,4 +6,5 @@ import lombok.Data;
 public class HttpResult {
     private int code;
     private String msg;
+    private String data;
 }

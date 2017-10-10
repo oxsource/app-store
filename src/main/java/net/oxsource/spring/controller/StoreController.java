@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/store")
-public class StoreController {
+public class StoreController extends BaseController {
 
     @RequestMapping(value = "/store", method = RequestMethod.GET)
     String index() {

@@ -1,6 +1,7 @@
 package net.oxsource.spring.database.model.user;
 
 import lombok.Data;
+import net.oxsource.spring.database.model.base.BaseModel;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -11,7 +12,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "user_develop")
-public class UserDevelop {
+public class UserDevelop extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", unique = true)
@@ -52,6 +53,12 @@ public class UserDevelop {
      */
     @Column(name = "u_site")
     private String webSite;
+
+    /**
+     * 0--禁用，1--启用
+     */
+    @Column(name = "status")
+    private int status;
 
     /**
      * 创建时间
